@@ -10,8 +10,8 @@ class ProjectSummaryScreen extends StatelessWidget {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         backgroundColor: Colors.grey[100],
-        leading: Icon(Icons.menu),
-        title: Row(
+        leading: const Icon(Icons.menu),
+        title: const Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(width: 8), // Adjust the width as needed
@@ -58,7 +58,7 @@ class ProjectSummaryScreen extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -69,7 +69,7 @@ class ProjectSummaryScreen extends StatelessWidget {
                     'Search',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   const TextField(
                     decoration: InputDecoration(
                       hintText: 'Search project here',
@@ -104,7 +104,7 @@ class ProjectSummaryScreen extends StatelessWidget {
                                     spreadRadius: 2, // Spread radius
                                     blurRadius: 6, // Blur radius
                                     offset:
-                                        Offset(0, 2), // Shadow position (x, y)
+                                        const Offset(0, 2), // Shadow position (x, y)
                                   ),
                                 ],
                               ),
@@ -169,7 +169,7 @@ class ProjectSummaryScreen extends StatelessWidget {
                                     spreadRadius: 2, // Spread radius
                                     blurRadius: 6, // Blur radius
                                     offset:
-                                        Offset(0, 2), // Shadow position (x, y)
+                                        const Offset(0, 2), // Shadow position (x, y)
                                   ),
                                 ],
                               ),
@@ -235,7 +235,7 @@ class ProjectSummaryScreen extends StatelessWidget {
                                     spreadRadius: 2, // Spread radius
                                     blurRadius: 6, // Blur radius
                                     offset:
-                                        Offset(0, 2), // Shadow position (x, y)
+                                        const Offset(0, 2), // Shadow position (x, y)
                                   ),
                                 ],
                               ),
@@ -321,7 +321,7 @@ class ProjectSummaryScreen extends StatelessWidget {
                       width: double.infinity,
                       color: Colors.grey[100],
                       padding:
-                          EdgeInsets.all(16.0), // Add padding to the container
+                          const EdgeInsets.all(16.0), // Add padding to the container
                       child: Column(
                         mainAxisAlignment:
                             MainAxisAlignment.start, // Align to the top
@@ -396,18 +396,18 @@ class ProjectSummaryScreen extends StatelessWidget {
                       child: Center(
                         child: Text(
                           value.toString() + ' %',
-                          style: TextStyle(color: Colors.white),
+                          style: const TextStyle(color: Colors.white),
                         ),
                       ),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 6.0),
+              const SizedBox(height: 6.0),
             ],
           ),
         ClipRRect(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(8.0),
             topRight: Radius.circular(8.0),
           ),
@@ -417,7 +417,7 @@ class ProjectSummaryScreen extends StatelessWidget {
             color: color,
           ),
         ),
-        SizedBox(height: 4.0),
+        const SizedBox(height: 4.0),
         Text(
           month,
           style: TextStyle(
@@ -444,7 +444,7 @@ class _PointerPainter extends CustomPainter {
     // Draw the rounded rectangle
     path.addRRect(RRect.fromRectAndRadius(
       Rect.fromLTWH(0, 0, size.width, size.height - 10),
-      Radius.circular(8.0), // Curved edges with radius 8
+      const Radius.circular(8.0), // Curved edges with radius 8
     ));
 
     // Draw the triangle

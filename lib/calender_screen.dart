@@ -33,8 +33,8 @@ class _CalendarScreenState extends State<CalendarScreen>
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         backgroundColor: Colors.grey[100],
-        leading: Icon(Icons.menu),
-        title: Row(
+        leading: const Icon(Icons.menu),
+        title: const Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(width: 8), // Adjust the width as needed
@@ -101,17 +101,17 @@ class _CalendarScreenState extends State<CalendarScreen>
                   angle: 90 *
                       3.141592653589793 /
                       180, // Convert 90 degrees to radians
-                  child: Icon(Icons.arrow_forward_ios_rounded),
+                  child: const Icon(Icons.arrow_forward_ios_rounded),
                 ),
                 onPressed: () {
                   _showBottomSheet(context);
                 },
               ),
-              Spacer(), // Spacer to push the icons to the right
+              const Spacer(), // Spacer to push the icons to the right
               Container(
                 width: 30,
                 height: 30,
-                padding: EdgeInsets.all(4.0), // Adjust padding as needed
+                padding: const EdgeInsets.all(4.0), // Adjust padding as needed
                 decoration: BoxDecoration(
                   // color: Colors.white,
                   border: Border.all(
@@ -127,7 +127,7 @@ class _CalendarScreenState extends State<CalendarScreen>
                     },
                     child: Transform.scale(
                       scale: 0.7,
-                      child: Icon(Icons.arrow_back_ios_rounded),
+                      child: const Icon(Icons.arrow_back_ios_rounded),
                     ),
                   ),
                 ),
@@ -138,7 +138,7 @@ class _CalendarScreenState extends State<CalendarScreen>
               Container(
                 width: 30,
                 height: 30,
-                padding: EdgeInsets.all(4.0), // Adjust padding as needed
+                padding: const EdgeInsets.all(4.0), // Adjust padding as needed
                 decoration: BoxDecoration(
                   // color: Colors.white,
                   border: Border.all(
@@ -154,7 +154,7 @@ class _CalendarScreenState extends State<CalendarScreen>
                     },
                     child: Transform.scale(
                       scale: 0.7,
-                      child: Icon(Icons.arrow_forward_ios_rounded),
+                      child: const Icon(Icons.arrow_forward_ios_rounded),
                     ),
                   ),
                 ),
@@ -162,7 +162,7 @@ class _CalendarScreenState extends State<CalendarScreen>
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Center(
@@ -174,7 +174,7 @@ class _CalendarScreenState extends State<CalendarScreen>
                 // First container that slightly shows
                 Container(
                   width: 10,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(8.0), // Curved top-right corner
@@ -197,7 +197,7 @@ class _CalendarScreenState extends State<CalendarScreen>
             ),
           ),
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         TabBar(
           controller: _tabController,
           tabs: const [
@@ -237,7 +237,7 @@ class _CalendarScreenState extends State<CalendarScreen>
   Widget _buildDayContainer(String day, String date) {
     return Container(
       width: 60, // Adjust the width as needed
-      margin: EdgeInsets.symmetric(horizontal: 4.0),
+      margin: const EdgeInsets.symmetric(horizontal: 4.0),
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(8.0),
@@ -247,16 +247,16 @@ class _CalendarScreenState extends State<CalendarScreen>
         children: [
           Text(
             day,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 18.0,
             ),
           ),
-          SizedBox(height: 4.0),
+          const SizedBox(height: 4.0),
           Text(
             date,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 16.0,
             ),
@@ -269,7 +269,7 @@ class _CalendarScreenState extends State<CalendarScreen>
   Widget _buildDaySubsequentContainer(String day, String date) {
     return Container(
       width: 60, // Adjust the width as needed
-      margin: EdgeInsets.symmetric(horizontal: 4.0),
+      margin: const EdgeInsets.symmetric(horizontal: 4.0),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8.0),
@@ -285,10 +285,10 @@ class _CalendarScreenState extends State<CalendarScreen>
               fontWeight: FontWeight.w700,
             ),
           ),
-          SizedBox(height: 4.0),
+          const SizedBox(height: 4.0),
           Text(
             date,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
               fontSize: 18.0,
@@ -319,8 +319,8 @@ class _CalendarScreenState extends State<CalendarScreen>
             // Bottom sheet content
             Container(
               height: 650,
-              padding: EdgeInsets.all(16),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.all(16),
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.vertical(
                   top: Radius.circular(16),
@@ -332,8 +332,8 @@ class _CalendarScreenState extends State<CalendarScreen>
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      SizedBox(width: 24), // Placeholder for alignment
-                      Text(
+                      const SizedBox(width: 24), // Placeholder for alignment
+                      const Text(
                         'Choose Date',
                         style: TextStyle(
                           fontSize: 20,
@@ -341,14 +341,14 @@ class _CalendarScreenState extends State<CalendarScreen>
                         ),
                       ),
                       IconButton(
-                        icon: Icon(Icons.close),
+                        icon: const Icon(Icons.close),
                         onPressed: () {
                           Navigator.pop(context);
                         },
                       ),
                     ],
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Container(
@@ -360,22 +360,22 @@ class _CalendarScreenState extends State<CalendarScreen>
                       ),
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       for (var day in ['M', 'T', 'W', 'T', 'F', 'S', 'S'])
                         Text(
                           day,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                     ],
                   ),
-                  SizedBox(height: 16),
-                  Row(
+                  const SizedBox(height: 16),
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(Icons.arrow_back_ios),
@@ -389,10 +389,10 @@ class _CalendarScreenState extends State<CalendarScreen>
                       Icon(Icons.arrow_forward_ios),
                     ],
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Expanded(
                     child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 7,
                         childAspectRatio: 1.5,
                       ),
@@ -416,11 +416,11 @@ class _CalendarScreenState extends State<CalendarScreen>
 
                         return Container(
                           alignment: Alignment.center,
-                          margin: EdgeInsets.all(4),
+                          margin: const EdgeInsets.all(4),
                           child: displayDay == 30 && index < 7
                               ? Text(
                                   displayDay.toString(),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.grey,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -429,14 +429,14 @@ class _CalendarScreenState extends State<CalendarScreen>
                                   ? Container(
                                       width: 30,
                                       height: 30,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.black,
                                         shape: BoxShape.circle,
                                       ),
                                       child: Center(
                                         child: Text(
                                           displayDay.toString(),
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -458,7 +458,7 @@ class _CalendarScreenState extends State<CalendarScreen>
                       },
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Container(
@@ -470,7 +470,7 @@ class _CalendarScreenState extends State<CalendarScreen>
                       ),
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   GestureDetector(
                     onTap: () {
                       Navigator.pop(context);

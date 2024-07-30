@@ -279,7 +279,7 @@ class _LogInScreenState extends State<LogInScreen> {
           borderRadius: BorderRadius.circular(8.0), // Curved edges
         ),
         minimumSize:
-            Size(double.infinity, 50), // Width and height of the button
+            const Size(double.infinity, 50), // Width and height of the button
       ),
       child: Row(
         mainAxisSize: MainAxisSize.max,
@@ -319,7 +319,7 @@ class _LogInScreenState extends State<LogInScreen> {
           borderRadius: BorderRadius.circular(8.0), // Curved edges
         ),
         minimumSize:
-            Size(double.infinity, 50), // Width and height of the button
+            const Size(double.infinity, 50), // Width and height of the button
       ),
       child: Row(
         mainAxisSize: MainAxisSize.max,
@@ -370,7 +370,7 @@ class _LogInScreenState extends State<LogInScreen> {
           borderRadius: BorderRadius.circular(8.0), // Curved edges
         ),
         minimumSize:
-            Size(double.infinity, 50), // Width and height of the button
+            const Size(double.infinity, 50), // Width and height of the button
       ),
       child: Row(
         mainAxisSize: MainAxisSize.max,

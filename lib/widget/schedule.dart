@@ -22,17 +22,17 @@ class _ScheduleState extends State<Schedule> {
                   .start, // Center align the Row content horizontally
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0), // Add padding here
+                const Padding(
+                  padding: EdgeInsets.all(8.0), // Add padding here
                   child: SizedBox(
                     height: 100,
                   ),
                 ),
         
-                SizedBox(
+                const SizedBox(
                   height: 100,
                 ), // Space from the top
-                Column(
+                const Column(
                   children: [
                     SizedBox(
                       height: 12,
@@ -40,10 +40,10 @@ class _ScheduleState extends State<Schedule> {
                     Text('09:00'),
                   ],
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 17,
                     ),
                     Container(
@@ -55,12 +55,12 @@ class _ScheduleState extends State<Schedule> {
                 ),
                 Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 17,
                     ),
                     CustomContainer(
                       curvedColor: Colors.purple[300]!,
-                      rectColor: Color.fromARGB(255, 247, 235, 250),
+                      rectColor: const Color.fromARGB(255, 247, 235, 250),
                       topText: 'Sprint Review Period 02 in May 2022',
                       bottomText: '09:00 AM - 10:00 AM',
                     ),
@@ -68,19 +68,19 @@ class _ScheduleState extends State<Schedule> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0), // Add padding here
+                const Padding(
+                  padding: EdgeInsets.all(8.0), // Add padding here
                   // child: SizedBox(
                   //   height: 100,
                   // ),
                 ),
-                Text('10:00'),
-                SizedBox(width: 10),
+                const Text('10:00'),
+                const SizedBox(width: 10),
                 Container(
                   // width: 310,
                   width: 288,
@@ -89,19 +89,19 @@ class _ScheduleState extends State<Schedule> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0), // Add padding here
+                const Padding(
+                  padding: EdgeInsets.all(8.0), // Add padding here
                   // child: SizedBox(
                   //   height: 100,
                   // ),
                 ),
-                Text('10:40'),
-                SizedBox(width: 10),
+                const Text('10:40'),
+                const SizedBox(width: 10),
                 Container(
                   width: 5, // Diameter of the circle
                   height: 5, // Diameter of the circle
@@ -127,17 +127,17 @@ class _ScheduleState extends State<Schedule> {
                   .start, // Center align the Row content horizontally
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0), // Add padding here
+                const Padding(
+                  padding: EdgeInsets.all(8.0), // Add padding here
                   child: SizedBox(
                     height: 1,
                   ),
                 ),
         
-                SizedBox(
+                const SizedBox(
                   height: 1,
                 ), // Space from the top
-                Column(
+                const Column(
                   children: [
                     SizedBox(
                       height: 12,
@@ -145,10 +145,10 @@ class _ScheduleState extends State<Schedule> {
                     Text('11:00'),
                   ],
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 17,
                     ),
                     Container(
@@ -160,12 +160,12 @@ class _ScheduleState extends State<Schedule> {
                 ),
                 Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 17,
                     ),
                     CustomContainer(
                       curvedColor: Colors.orange[800]!,
-                      rectColor: Color.fromARGB(255, 235, 200, 150),
+                      rectColor: const Color.fromARGB(255, 235, 200, 150),
                       topText: 'Meeting with Client',
                       bottomText: '11:00 AM - 12:00 AM',
                     ),
@@ -179,17 +179,17 @@ class _ScheduleState extends State<Schedule> {
                   .start, // Center align the Row content horizontally
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0), // Add padding here
+                const Padding(
+                  padding: EdgeInsets.all(8.0), // Add padding here
                   child: SizedBox(
                     height: 1,
                   ),
                 ),
         
-                SizedBox(
+                const SizedBox(
                   height: 1,
                 ), // Space from the top
-                Column(
+                const Column(
                   children: [
                     SizedBox(
                       height: 12,
@@ -197,10 +197,10 @@ class _ScheduleState extends State<Schedule> {
                     Text('12:00'),
                   ],
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 17,
                     ),
                     Container(
@@ -212,7 +212,7 @@ class _ScheduleState extends State<Schedule> {
                 ),
                 Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 17,
                     ),
                     CustomContainer(
@@ -227,14 +227,14 @@ class _ScheduleState extends State<Schedule> {
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0), // Add padding here
+                const Padding(
+                  padding: EdgeInsets.all(8.0), // Add padding here
                   // child: SizedBox(
                   //   height: 100,
                   // ),
                 ),
-                Text('13:00'),
-                SizedBox(width: 10),
+                const Text('13:00'),
+                const SizedBox(width: 10),
                 Container(
                   // width: 310,
                   width: 288,

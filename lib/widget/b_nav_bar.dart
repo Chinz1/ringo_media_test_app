@@ -14,11 +14,11 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    GridViewScreen(),
+    const GridViewScreen(),
     ProjectSummaryScreen(),
-    PlusScreen(), // Placeholder for the plus button
+    const PlusScreen(), // Placeholder for the plus button
     CalendarScreen(),
-    ProfileScreen(),
+    const ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -84,8 +84,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
           // Handle the plus button tap
         },
         backgroundColor: Colors.black,
-        child: Icon(Icons.add, color: Colors.white, size: 36),
-        shape: CircleBorder(),
+        shape: const CircleBorder(),
+        child: const Icon(Icons.add, color: Colors.white, size: 36),
       ),
     );
   }

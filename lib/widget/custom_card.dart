@@ -17,7 +17,7 @@ class CustomCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16), // Curve all edges
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.black12,
             blurRadius: 4,
@@ -35,15 +35,15 @@ class CustomCard extends StatelessWidget {
               children: [
                 Text(
                   topText,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),
                 ),
-                SizedBox(height: 4), // Space between the texts
+                const SizedBox(height: 4), // Space between the texts
                 Text(
                   bottomText,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.grey,
                   ),
                 ),
@@ -58,7 +58,7 @@ class CustomCard extends StatelessWidget {
                     color: Colors.green[300],
                     borderRadius: BorderRadius.circular(4), // Slightly curved edges
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.check,
                     color: Colors.white,
                     size: 20,

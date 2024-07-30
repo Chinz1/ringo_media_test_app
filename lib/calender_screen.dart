@@ -219,7 +219,7 @@ class _CalendarScreenState extends State<CalendarScreen>
           unselectedLabelColor: Colors.grey,
         ),
         Container(
-          height: h / 2, // Adjust the height of the TabBarView
+          height: h, // Adjust the height of the TabBarView
           width: w,
           child: TabBarView(
             controller: _tabController,

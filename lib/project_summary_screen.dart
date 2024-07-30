@@ -328,7 +328,7 @@ class ProjectSummaryScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment
                             .start, // Align to the start (left)
                         children: [
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment
                                 .spaceBetween, // Space between items
                             children: [
@@ -343,13 +343,11 @@ class ProjectSummaryScreen extends StatelessWidget {
                               Icon(Icons.more_horiz), // Three dots icon
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                               height:
                                   16.0), // Spacing between the row and the tab bar
-                          Expanded(
-                            child: _buildBarChart(),
-                          ),
-                          SizedBox(height: 170.0),
+                          _buildBarChart(),
+                          const SizedBox(height: 170.0),
                         ],
                       ),
                     ),
@@ -366,6 +364,8 @@ class ProjectSummaryScreen extends StatelessWidget {
   Widget _buildBarChart() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment:
+          CrossAxisAlignment.end, // Ensure all bars align at the bottom
       children: [
         _buildBar('Jan', 56, Colors.grey[300]!),
         _buildBar('Feb', 65, Colors.grey[300]!),
@@ -380,7 +380,8 @@ class ProjectSummaryScreen extends StatelessWidget {
   Widget _buildBar(String month, double value, Color color,
       [bool isSelected = false]) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment:
+          MainAxisAlignment.end, // Align all children to the bottom
       children: [
         if (isSelected)
           Column(
@@ -406,7 +407,6 @@ class ProjectSummaryScreen extends StatelessWidget {
               SizedBox(height: 6.0),
             ],
           ),
-        SizedBox(height: 12.0),
         ClipRRect(
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(8.0),
@@ -414,7 +414,7 @@ class ProjectSummaryScreen extends StatelessWidget {
           ),
           child: Container(
             width: 55, // Increase width for each bar
-            height: value * 2,
+            height: value * 2, // Scaling factor for bar height
             color: color,
           ),
         ),

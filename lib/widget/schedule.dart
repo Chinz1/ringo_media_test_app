@@ -60,10 +60,7 @@ class _ScheduleState extends State<Schedule> {
                     ),
                     CustomContainer(
                       curvedColor: Colors.purple[300]!,
-                      // rectColor: Color.fromARGB(255, 218, 190, 231)!,
                       rectColor: Color.fromARGB(255, 247, 235, 250),
-
-                      // rectColor: Colors.purple[100]!,
                       topText: 'Sprint Review Period 02 in May 2022',
                       bottomText: '09:00 AM - 10:00 AM',
                     ),
@@ -168,7 +165,6 @@ class _ScheduleState extends State<Schedule> {
                     ),
                     CustomContainer(
                       curvedColor: Colors.orange[800]!,
-                      // rectColor: Color.fromARGB(255, 255, 220, 178)!,
                       rectColor: Color.fromARGB(255, 235, 200, 150),
                       topText: 'Meeting with Client',
                       bottomText: '11:00 AM - 12:00 AM',

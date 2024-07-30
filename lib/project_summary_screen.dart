@@ -347,7 +347,6 @@ class ProjectSummaryScreen extends StatelessWidget {
                               height:
                                   16.0), // Spacing between the row and the tab bar
                           _buildBarChart(),
-                          const SizedBox(height: 170.0),
                         ],
                       ),
                     ),
